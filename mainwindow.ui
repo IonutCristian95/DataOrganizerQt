@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="ProcessDataButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>450</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process the data</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="selectSourceButton">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>130</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select source directory</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="selectDestinationButton">
+    <property name="geometry">
+     <rect>
+      <x>576</x>
+      <y>130</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select destination directory</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sourceDirLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Source dir: </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="destinationDirLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>170</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Destination dir: </string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Data Organizer is a program that will move the files that you choose by the presented criterias, from your source directory to destination directory.</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>450</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="output">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>350</y>
+      <width>351</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Program output:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="inputTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>240</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="exampleInputLabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Example: </string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>110</y>
+      <width>292</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Files selected by:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="radioButtonType">
+         <property name="text">
+          <string>Extension</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonDate">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButtonName">
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionNew_Operation"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionNew_Operation">
+   <property name="text">
+    <string>New Operation</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
